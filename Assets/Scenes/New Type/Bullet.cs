@@ -5,6 +5,8 @@ public class Bullet : MonoBehaviour
     public float Speed { get; set; }
     public float Damage { get; set; }
 
+    public float BurstCount = 1;
+
     void Update()
     {
         transform.position += transform.forward * Speed * Time.deltaTime;

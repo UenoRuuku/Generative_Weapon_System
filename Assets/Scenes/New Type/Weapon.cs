@@ -14,11 +14,20 @@ public abstract class Weapon
     }
 
     public abstract void Attack();
+
+    public void AddTag(Tag t){
+        Tags.Add(t);
+    }
+
+    public int SetRarity(int r){
+        return Level = r;
+    }
 }
 
 public abstract class Tag
 {
     public string Name { get; set; }
+    public string Description { get; set; }
 
     public abstract void Apply(Weapon weapon);
 }
