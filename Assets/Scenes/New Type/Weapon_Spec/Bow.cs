@@ -1,19 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using generative.data;
-public class Bow : Weapon
+
+public class Bow : RangedWeapon
 {
-    // Start is called before the first frame update
-    public override void Start()
+    public Transform firePoint;
+    public GameObject bulletPrefab;
+    private bool isCharging;
+    private float chargeTime;
+
+    private void Update()
     {
-        _name = Weapon_Name.bow;
-        base.Start();
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     isCharging = true;
+        //     chargeTime = 0;
+        // }
+
+        // if (isCharging)
+        // {
+        //     chargeTime += Time.deltaTime;
+        // }
+
+        // if (Input.GetMouseButtonUp(0))
+        // {
+        //     isCharging = false;
+        //     Attack();
+        // }
     }
 
-
-    public override void Feature()
+    public override void Attack()
     {
-        //do things that a sword should do like attacking... ..
+        // 可以根据chargeTime调整子弹速度或伤害等属性
+        float bulletSpeed = Mathf.Clamp(chargeTime * 10, 10, 50);
+        float bulletDamage = Damage * Mathf.Clamp(chargeTime, 1, 3);
+
+        // 实例化子弹并设置属性
+        GameObject bulletInstance = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletInstance.GetComponent<Bullet>();
+        bullet.Speed = bulletSpeed;
+        bullet.Damage = bulletDamage;
     }
 }

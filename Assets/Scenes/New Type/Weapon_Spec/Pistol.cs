@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Sword : MeleeWeapon
+public class Pistol : RangedWeapon
 {
     public Transform firePoint;
     public GameObject bulletPrefab;

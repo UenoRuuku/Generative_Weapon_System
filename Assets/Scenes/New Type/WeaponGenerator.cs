@@ -12,14 +12,19 @@ public class WeaponGenerator : MonoBehaviour
     public List<GameObject> rangedWeaponPrefabs;
     public List<Tag> tagPool;
 
+    public UI u;
+
     private System.Random random;
 
     private void Start()
     {
         random = new System.Random();
         tagPool = new List<Tag>();
+        //tagPool.Add(new AttackModuleTag());
         tagPool.Add(new AttackModuleTag());
-        tagPool.Add(new AttackModuleTag());
+        tagPool.Add(new AttributeEnhanceTag());
+        GameObject w = GenerateWeapon(transform.position);
+        u.updateUI(w.GetComponent<Weapon>());
     }
 
     public GameObject GenerateWeapon(Vector3 position)
@@ -49,8 +54,10 @@ public class WeaponGenerator : MonoBehaviour
 
         for (int i = 0; i < tagCount; i++)
         {
+            Tag t = randomTags[i];
+            t.Apply(weapon);
             // Generate tags for the weapon
-            weapon.AddTag(randomTags[i]);
+            weapon.AddTag(t);
         }
 
         return weaponInstance;
@@ -64,7 +71,7 @@ public class WeaponGenerator : MonoBehaviour
             Tag re = (Tag)DeepCopy(tagPool[UnityEngine.Random.Range(0, tagPool.Count)]);
             ret.Add(re);
         }
-        return null;
+        return ret;
     }
 
     public static object DeepCopy(object _object)

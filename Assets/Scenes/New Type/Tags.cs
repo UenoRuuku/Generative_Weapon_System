@@ -11,7 +11,7 @@ public class AttributeEnhanceTag : Tag
     public override void Apply(Weapon weapon)
     {
         DamageMultiplier = UnityEngine.Random.Range(.0f,3.0f);
-        Description = "The damage dealt by the weapon is enhanced by" + Convert.ToString(1+DamageMultiplier) + "%";
+        Description = "The damage dealt by the weapon is enhanced by " + Convert.ToString(100+100*DamageMultiplier) + "%";
         // 修改武器的属性
         if (weapon is MeleeWeapon meleeWeapon)
         {

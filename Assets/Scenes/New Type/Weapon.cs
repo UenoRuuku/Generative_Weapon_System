@@ -2,24 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Weapon
+public abstract class Weapon : MonoBehaviour
 {
-    public string Name { get; set; }
-    public int Level { get; set; }
+    [SerializeField]
+    public string Name;
+    [SerializeField]
+    public float Damage; //{ get; set; }
+    [SerializeField]
+    public int Level;
     public List<Tag> Tags { get; set; }
 
-    public Weapon()
+    public void Start()
     {
-        Tags = new List<Tag>();
+        if (Tags == null)
+        {
+            Tags = new List<Tag>();
+        }
     }
 
     public abstract void Attack();
 
-    public void AddTag(Tag t){
+    public void AddTag(Tag t)
+    {
+        if (Tags == null)
+        {
+            Tags = new List<Tag>();
+        }
         Tags.Add(t);
     }
 
-    public int SetRarity(int r){
+    public int SetRarity(int r)
+    {
         return Level = r;
     }
 }
@@ -34,7 +47,6 @@ public abstract class Tag
 
 public class MeleeWeapon : Weapon
 {
-    public float Damage { get; set; }
 
     public override void Attack()
     {
@@ -44,8 +56,10 @@ public class MeleeWeapon : Weapon
 
 public class RangedWeapon : Weapon
 {
-    public float Damage { get; set; }
-    public Bullet Bullet { get; set; }
+
+
+    [SerializeField]
+    public Bullet Bullet; //{ get; set; }
 
     public override void Attack()
     {
