@@ -20,7 +20,7 @@ namespace generative.data
 
     public enum Weapon_Name
     {
-        bow, blade, sword
+        bow, ninjastar, sword,shotgun,axe,chainsaw,handgun,katana,
     }
 
 
@@ -30,7 +30,7 @@ namespace generative.data
     {
 
         [SerializeField]
-        public Weapon_Name name { get; private set; }
+        public Weapon_Name name;
         [SerializeField]
         public Weapon_Level level;
         [SerializeField]

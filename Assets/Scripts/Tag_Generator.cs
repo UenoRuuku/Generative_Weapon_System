@@ -5,7 +5,7 @@ using generative.data;
 
 public class Tag_Generator : MonoBehaviour {
     public Tag GenerateTag(){
-        Tag_Name t = (Tag_Name)Random.Range(0,2);//(0,8)
+        Tag_Name t = (Tag_Name)Random.Range(0,8);//(0,8)
         Tag rt = null;
         switch (t){
             case Tag_Name.LongRange:

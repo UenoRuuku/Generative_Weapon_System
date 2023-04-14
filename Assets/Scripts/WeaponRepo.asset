@@ -13,9 +13,59 @@ MonoBehaviour:
   m_Name: WeaponRepo
   m_EditorClassIdentifier: 
   Weapons:
-  - level: 0
+  - name: 4
+    level: 0
     description: 
     damage: 0
     range: 0
     attackSpeed: 0
-    Texture3D: {fileID: 0}
+    Texture3D: {fileID: 919132149155446097, guid: a401c806c36fadd449962ef83b0e02db, type: 3}
+  - name: 0
+    level: 0
+    description: 
+    damage: 0
+    range: 0
+    attackSpeed: 0
+    Texture3D: {fileID: 919132149155446097, guid: 575886de1d951f942aa8e99f90b56da9, type: 3}
+  - name: 5
+    level: 0
+    description: 
+    damage: 0
+    range: 0
+    attackSpeed: 0
+    Texture3D: {fileID: 919132149155446097, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+  - name: 6
+    level: 0
+    description: 
+    damage: 0
+    range: 0
+    attackSpeed: 0
+    Texture3D: {fileID: 919132149155446097, guid: 01bd20f75a06c93488d7e7e153552c4b, type: 3}
+  - name: 7
+    level: 0
+    description: 
+    damage: 0
+    range: 0
+    attackSpeed: 0
+    Texture3D: {fileID: 919132149155446097, guid: a7f4e371508f0e64389a717d6c45af43, type: 3}
+  - name: 1
+    level: 0
+    description: 
+    damage: 0
+    range: 0
+    attackSpeed: 0
+    Texture3D: {fileID: 919132149155446097, guid: c6dde07ad0b38ac4ea1ba242fe7554d2, type: 3}
+  - name: 3
+    level: 0
+    description: 
+    damage: 0
+    range: 0
+    attackSpeed: 0
+    Texture3D: {fileID: 919132149155446097, guid: 0672e3538e9f59740aca1d5cbe97a741, type: 3}
+  - name: 2
+    level: 0
+    description: 
+    damage: 0
+    range: 0
+    attackSpeed: 0
+    Texture3D: {fileID: 919132149155446097, guid: 5f01b21a513649d44bfae7580242f1a2, type: 3}
