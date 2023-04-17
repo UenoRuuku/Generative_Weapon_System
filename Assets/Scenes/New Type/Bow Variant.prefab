@@ -74,9 +74,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b3909b9582c3246a5140bda620bc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Bow
-  Damage: 3
+  Name: Phantom Stalker
+  Damage: 80
   Level: 0
+  image: {fileID: 21300000, guid: 14ad198ab407ba340b92dec087649ee1, type: 3}
+  description: '"The Phantom Stalker is a legendary bow. The skillful woodworking
+    and precise mechanics of this bow give it extraordinary range and power. The
+    pattern of the bow is like the stars in the night sky, mysterious and unpredictable,
+    while the arrow contains the potential power of destruction."'
   Bullet: {fileID: 2483491624998161228, guid: 3b46a4a56f7967c4c82036e4191e7a0f, type: 3}
   firePoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 2576682897870387205, guid: 3b46a4a56f7967c4c82036e4191e7a0f, type: 3}

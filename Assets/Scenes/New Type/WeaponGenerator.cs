@@ -23,6 +23,14 @@ public class WeaponGenerator : MonoBehaviour
         //tagPool.Add(new AttackModuleTag());
         tagPool.Add(new AttackModuleTag());
         tagPool.Add(new AttributeEnhanceTag());
+        tagPool.Add(new PowerOfLightning());
+        //tagPool.Add(new UselessTag());
+        tagPool.Add(new TwinFang());
+        tagPool.Add(new ThreeRing());
+        tagPool.Add(new FinalSpark());
+        tagPool.Add(new Damnation());
+        tagPool.Add(new BloodDrinker());
+
         GameObject w = GenerateWeapon(transform.position);
         u.updateUI(w.GetComponent<Weapon>());
     }
@@ -66,9 +74,18 @@ public class WeaponGenerator : MonoBehaviour
     public List<Tag> GetRandomTag(int cnt)
     {
         List<Tag> ret = new List<Tag>();
+        List<int> temp = new List<int>();
         for (int i = 0; i < cnt; i++)
         {
-            Tag re = (Tag)DeepCopy(tagPool[UnityEngine.Random.Range(0, tagPool.Count)]);
+            int temp_num = UnityEngine.Random.Range(0, tagPool.Count);
+            while (temp.Contains(temp_num))
+            {
+                temp_num = UnityEngine.Random.Range(0, tagPool.Count);
+            }
+            temp.Add(temp_num);
+            Tag re = (Tag)DeepCopy(tagPool[temp_num]);
+
+            
             ret.Add(re);
         }
         return ret;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Weapon : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public abstract class Weapon : MonoBehaviour
     public float Damage; //{ get; set; }
     [SerializeField]
     public int Level;
+    [SerializeField]
+    public Sprite image;
+    [SerializeField]
+    public string description;
     public List<Tag> Tags { get; set; }
 
     public void Start()

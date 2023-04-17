@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4491810427358663406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+      propertyPath: m_Name
+      value: Chainsaw Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+--- !u!1 &3645510074590752703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f62de5bd778644f45a3f41c23b003aee, type: 3}
+  m_PrefabInstance: {fileID: 4491810427358663406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-6164583562589320469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3645510074590752703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10f685b981db76845bc7571989246985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: ' Steam Cutter'
+  Damage: 60
+  Level: 0
+  image: {fileID: 21300000, guid: f19eeabde577ef947b610d4712ab0011, type: 3}
+  description: '"The Steam Cutter was born out of machinery and fire. This long-handled
+    circular saw combines the skills of the past with the technology of the future
+    to demonstrate a new kind of combat power. The stiff teeth of the saw are like
+    the teeth of a dragon, fierce and ferocious, and with steam power, its high-speed
+    rotation can easily tear apart any enemy."'
+  firePoint: {fileID: 0}
+  bulletPrefab: {fileID: 2576682897870387205, guid: 3b46a4a56f7967c4c82036e4191e7a0f, type: 3}

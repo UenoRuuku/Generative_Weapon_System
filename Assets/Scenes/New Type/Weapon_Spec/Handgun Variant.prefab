@@ -62,7 +62,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 01bd20f75a06c93488d7e7e153552c4b, type: 3}
   m_PrefabInstance: {fileID: 7486376895326535313}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1927049390219368267
+--- !u!114 &-725674189426467595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,9 +74,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5be0c32bef63c47b515a96baeb2a7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: HandGun
+  Name: Flame Oath
+  Damage: 40
   Level: 0
-  Damage: 5
-  Bullet: {fileID: 0}
+  image: {fileID: 21300000, guid: a7b1d2721ef0465419a24ae4eea0c7bf, type: 3}
+  description: '"The Flame Oath is an awe-inspiring pistol. Its delicate engraving
+    and retro look conceal superior firepower and accurate range. Gilded inlay details
+    highlight its magnificence and uniqueness, while its blistering firing speed
+    makes you a fearsome presence on the battlefield."'
+  Bullet: {fileID: 2483491624998161228, guid: 3b46a4a56f7967c4c82036e4191e7a0f, type: 3}
   firePoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 2576682897870387205, guid: 3b46a4a56f7967c4c82036e4191e7a0f, type: 3}

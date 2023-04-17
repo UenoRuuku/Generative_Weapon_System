@@ -24,6 +24,89 @@ public class AttributeEnhanceTag : Tag
     }
 }
 
+public class BloodDrinker : Tag
+{
+    public BloodDrinker()
+    {
+        Name = "BloodDrinker";
+    }
+    public override void Apply(Weapon weapon)
+    {
+
+        Description = "Each attack has a 30% chance of life steal.";
+    }
+
+}
+
+public class PowerOfLightning : Tag
+{
+    public PowerOfLightning()
+    {
+        Name = "Power of Lightning";
+    }
+    public override void Apply(Weapon weapon)
+    {
+
+        Description = "Each attack has a 15% chance of triggering chain lightning, which deals 30 damage.";
+    }
+
+}
+
+public class ThreeRing : Tag
+{
+    public ThreeRing()
+    {
+        Name = "Dragon Breath";
+    }
+    public override void Apply(Weapon weapon)
+    {
+
+        Description = "Each 3 times attacks will deal one fire attack. It will allow weapon to deal additional 50 fire damage.";
+    }
+
+}
+
+public class FinalSpark: Tag
+{
+    public FinalSpark()
+    {
+        Name = "Final Spark";
+    }
+    public override void Apply(Weapon weapon)
+    {
+
+        Description = "Each attack has a 20% chance of causing a penetrating attack.";
+    }
+
+}
+
+public class Damnation : Tag
+{
+    public Damnation()
+    {
+        Name = "A curse from the Grim Reaper";
+    }
+    public override void Apply(Weapon weapon)
+    {
+
+        Description = "There is a 30% chance that a soul will appear after killing an enemy unit, and each soul can help restore 1 life point.";
+    }
+
+}
+
+public class TwinFang: Tag
+{
+    public TwinFang()
+    {
+        Name = "Medea's Posion";
+    }
+    public override void Apply(Weapon weapon)
+    {
+
+        Description = "Each attack has a 10% chance of triggering posioned, which deals 5 damage each second.";
+    }
+
+}
 public class AttackModuleTag : Tag
 {
     public AttackModuleTag(){
