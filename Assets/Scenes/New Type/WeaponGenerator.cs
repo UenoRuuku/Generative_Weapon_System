@@ -14,10 +14,17 @@ public class WeaponGenerator : MonoBehaviour
 
     public UI u;
 
+    public GameObject panel;
+
+    
+    
+    
+
     private System.Random random;
 
-    private void Start()
+    public void OnButtonClick()
     {
+        panel.SetActive(true);
         random = new System.Random();
         tagPool = new List<Tag>();
         //tagPool.Add(new AttackModuleTag());
@@ -34,7 +41,23 @@ public class WeaponGenerator : MonoBehaviour
         GameObject w = GenerateWeapon(transform.position);
         u.updateUI(w.GetComponent<Weapon>());
     }
+    private void Start()
+    {
+       
+    }
+    public void RegenerateWeapon()
+    {
 
+        Weapon currentWeapon = FindObjectOfType<Weapon>();
+        if (currentWeapon != null)
+        {
+            Destroy(currentWeapon.gameObject);
+
+        }
+        GameObject newWeapon = GenerateWeapon(transform.position);
+        u.updateUI(newWeapon.GetComponent<Weapon>());
+
+    }
     public GameObject GenerateWeapon(Vector3 position)
     {
         int weaponType = random.Next(0, 2); // 0 for melee, 1 for ranged
